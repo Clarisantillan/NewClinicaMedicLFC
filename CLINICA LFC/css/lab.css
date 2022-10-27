@@ -1,0 +1,375 @@
+*{
+    margin: 0;
+    padding: 0;
+   box-sizing: border-box;
+}
+.container{
+    display: grid;
+   
+    height: 100%;
+    width: 100%;
+    /*max-width: 1000px;*/
+    grid-template-areas: 'header header header'
+        'nav nav nav'
+        'carusel carusel carusel'
+        'footer footer footer';
+    background-color: #265769;
+    grid-template-columns: 200px 200px auto ;
+    grid-template-rows: 10% 6.5% auto 45% ;
+}
+.header{
+    grid-area: header;
+    background-color: #F6F3F0;
+}
+.logo{
+    width: 20%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 10px;
+}
+
+
+.nav{
+    grid-area: nav;
+    background-color:  #265769;
+    display:block;
+    padding: 1px;
+    font-size: 1em;
+}
+.nav > div{
+    font-size: 1.2em;
+   display: flex;
+   justify-content:flex-start;
+}
+#volver{
+    color: #f6f3f0ba;
+    position: absolute;
+    right:10px;
+    font-size: 2em;
+}
+.carusel{
+    background-image: url(../img/laboratorio.jpg);
+    grid-area: carusel;
+    background-color: #265769;
+    background-repeat:no-repeat;
+    background-position: center;
+    height: 500px;
+    background-size: cover;
+}
+.footer{
+  grid-area: footer; 
+  background-color:  #265769; 
+}
+.laboratorio{
+    color:#5FA49E;
+    font-size: 2em;
+    font-style: italic;
+    display:inline-flex;
+  margin: 0 60px;
+  text-align: center;
+
+}
+
+#Preparacion, #Orden, #Sinturno{
+    border: 2px solid #b2d3df;
+    border-width:5px 0px 0px;
+    border-radius: 20px;
+    width: 50%;
+    height: 70%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(10px) ;
+    background-color: rgba(245, 250, 255, 0.600);
+    position: absolute;
+    left: 23vw;
+    top: 40vh;
+    opacity: 0;
+}
+ul{
+    list-style-type:none;
+}
+li{
+    list-style-type: none;
+    color: #143744;
+    line-height: 25px;
+    padding: 10px;
+    display: list-item;
+    text-align: left;
+    font-size: 21px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+}
+#Sinturno{
+    display: block;
+    padding: 10px;
+    margin: 10px;
+    color: #265769;
+}
+#Sinturno > h2{
+    margin-top: 20px;
+    font-size: 2em;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#Sinturno > h5{
+    font-size: 1.4em;
+    padding: 10px;
+    margin-top: 20px;
+
+}
+form > h3{
+    color: #265769;
+    font-size: 2em;
+}
+form > input{
+    color: #143744;
+    padding: 8px;
+    margin: 10px;
+    display: flex;
+   flex-direction: column;
+   justify-content: center;
+   position: relative;
+   left: 30%;
+   top: 10%;
+   border: 1px solid #265769;
+
+}
+#enviar{
+    padding-left: 25px;
+   font-size: 1em;
+    border:1px solid #5FA49E;
+    justify-content: center;
+    background-color: #265769;
+    color: #F6F3F0;
+    width: 100px;
+    height: 30px;
+    position: relative;
+    left: 35%;
+    border-radius: 20px;
+}
+#enviar:hover{
+    background-color: #F6F3F0;
+    color: #265769;
+}
+#flecha{
+    font-size: 2.5em;
+   color: rgba(82, 100, 109, .5);
+    position:fixed;
+   right: 1rem;
+   bottom: 5.5rem;
+}
+h1{
+    display:flex;
+    justify-content: center;
+    color: #F6F3F0;
+    font-size: 1.8em;
+ box-shadow: #5FA49E;
+}
+.icocont{
+    text-decoration: none;
+  color: #F6F3F0; 
+  display: block; 
+  padding: 0.4em;
+  font-size: 1.3em;
+}
+.card{
+    background-color: #265769;
+    width: 250px;
+    height: 300px;
+    position: absolute;
+  border: 2px outset #5FA49E;
+  border-radius: 20px;
+   right: 5px;
+   padding: 20px;
+   color: #F6F3F0;
+   text-align: center;
+}
+h3, p{
+    padding: 10px;
+    font-size: 1.3em;
+}
+#wspp{
+    color: #00FF00;
+    
+    font-size: 2.5em;
+}
+.boton{
+    background-color: #40CFFF;
+    color: #F6F3F0;
+    font-size: 1.5em;
+    text-decoration: none;
+    border-radius: 20px;
+    width: 15px;
+    height: 100px;
+    padding: 5px;
+}
+.contenedor-portal{
+   
+    border: 1px solid #5FA49E;
+    border-radius: 40px;
+    padding: 30px;
+    padding-left: 30px;
+    padding-right:30px;
+     margin-left: 190px;
+    position: absolute;
+    top: 3%;
+    left: 45%;
+    background-color: #265769;
+    color:#F6F3F0 ;
+    font-family: sans-serif;
+}
+.portal{
+    border: 2px solid #5FA49E;
+  border-radius: 40px;
+  color:#F6F3F0;
+  padding: 15px;
+  font-family: sans-serif;
+  margin-left: 15px;
+  text-decoration: none;
+}
+.portal:hover{
+    background-color: #5FA49E;
+}
+.nava{
+    color: #F6F3F0;
+    text-decoration: none;
+    border-radius: 20px;
+    border:1px solid  #5FA49E;
+    padding: 10px;
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+ 
+}
+.nava:hover{
+    background-color: #5FA49E;   
+}
+@media  screen and (max-width: 640px){
+    html{
+        width: 100vw;
+    }
+    .container{
+        grid-template-areas: 'header header header'
+        'nav nav nav'
+        'carusel carusel  carusel'
+        'footer footer footer';  
+        grid-template-columns: auto auto auto ;
+        grid-template-rows: 9% 6%  auto auto;
+    }
+    .container{
+        display: grid;
+        height: 100%;
+        width: 100%;
+        grid-template-areas: 'header'
+        'nav '
+        'carusel '
+        'footer';  
+        grid-template-columns: auto;
+        grid-template-rows: 8% 4%  auto 45% ;
+    }
+    .contenedor-portal{
+        padding: 12px; 
+        position: absolute;
+        top: 2px;
+        left: 30%;
+        width: 200px;
+        height: 100px;
+        margin-left: 15px;
+        
+    }
+    .portal{
+        width: 150px;
+        height: 30px;
+        padding: 5px; 
+        margin-top: 3px;
+        display:block; 
+       }
+    .carusel{
+     width: 98.75vw;
+     height:80vh;
+    }
+    
+    .carrusel > img{
+     max-width: 70vw;
+    }
+   .nav{
+     font-size: 0.7em;
+     padding: 3px;
+   }
+   .nava{
+     padding: 8px;
+     margin: 2px;
+   }
+   #volver{
+     color: #F6F3F0;
+     right: 45px;
+    }
+    .card{
+        padding: 2px;
+        width: 200px;
+        height: 250px;
+      
+    }
+    .boton{
+        width: 10px;
+        height: 90px;
+        padding: 3px;
+    }
+    .laboratorio{
+        font-size: 1.4em;
+        margin: unset;
+    }
+    
+#Preparacion, #Orden, #Sinturno{
+    border: 2px solid #b2d3df;
+    border-width:5px 0px 0px;
+    border-radius: 20px;
+    width: 80%;
+    height: 70%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(10px) ;
+    background-color: rgba(245, 250, 255, 0.600);
+ position: absolute;
+ top: 30%;
+ left: 5%;
+    opacity: 0;
+}
+li{
+    font-size: 15px;
+    padding: 6px;
+}
+
+form > h3{
+       color: #265769;
+ font-size: 1em;
+ position: relative;
+ top: 10px;
+}  
+form > input{
+position: relative;
+   left: 25%;
+   top: 10%;
+   padding: 5px;
+   border: none;
+}
+#Sinturno{
+    display: block;
+    padding: 5px;
+    margin: 10px;
+    color: #265769;
+}
+#Sinturno > h2{
+    margin-top: 20px;
+    font-size: 1em;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#Sinturno > h5{
+    font-size: 0.9em;
+    padding: 10px;
+    margin-top: 20px;
+
+}
+}

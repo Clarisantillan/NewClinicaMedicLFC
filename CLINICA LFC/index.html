@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LFC-Clinica Medica</title>
+    <link rel="icon" href="./img/favicon.ico">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-straight/css/uicons-bold-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css'>
+
+</head>
+<body id="fuer" class="container">
+  <header id="inicio" class="header">
+    <img class="logo" src="./img/logo.png" alt="logo">
+   <div class="contenedor-portal">
+      Portal del paciente
+      <a class="portal" href="./login.registro.html">
+        <i class="fi fi-rs-calendar"></i>
+       Turnos
+      </a>
+      <a class="portal" href="./login.registro.html">
+        <i class="fi fi-rs-computer"></i>
+        Resultados
+      </a>
+   </div>
+  </header> 
+ <nav class="nav">
+   <ul id="ul" class="menu">
+      <li id="li"> <a id="selected" href="#inicio"></a></li>
+      <li id="li"><a href="#nosotros">Nosotros</a> </li>
+      <li id="li"><a  id="servis"href="#servicios">Servicios</a>
+       <ul id="uul">
+          <li><a  href="./laboratorio.html">Laboratorio</a></li>
+          <li><a  href="./vacunacion.html">Vacunacion</a></li>
+         <li><a onclick="myfun()" href="./radiologia.html">Radiologia</a></li>
+       </ul> 
+      </li>
+      <li id="li"><a id="obrassoc" onclick="abrir()" href="#obrassociales">Cobertura</a></li>
+      <li id="li"><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+ 
+ 
+  <div class="cobertura" id="obras2"> 
+   <h4>OBRAS SOCIALES CON LAS QUE TRABAJAMOS </h4>
+    <ul class="lu">
+      <li>AMEP</li>
+      <li>APRES</li>
+      <li>COMEI</li>
+      <li>IOMA</li>
+      <li>IMEDICAL</li>
+      <li>MEDIFE</li>
+      <li>OSTEP</li>
+      <li>OSDE</li>
+    </ul>
+ 
+    <ul class="lu">
+      <li>OSECAC</li>
+      <li>SANCOR Salud </li>
+      <li>Swiss Medical</li>
+      <li>SADAIC</li>
+      <li>OSPRERA</li>
+      <li>OSPJN</li>
+      <li>OSSEG seguros</li>
+      <li>TECHINT</li>
+    </ul>
+  </div>
+  <div class="carusel">
+    <img name="slider" style="width: 98.75vw; height:98.75vh; ">
+  </div>
+  <script>
+     window.addEventListener('load', function()
+     {
+      var imagenes=[];
+
+      imagenes[0]='./img/doctor-paciente.jpg';
+     imagenes[1]='./img/vacunacion.jpg';
+     imagenes[2]='./img/radiologiaa.jpg';
+
+     document.slider.src=imagenes[0];
+
+     var i=0;
+     var j=0;
+
+     function cambiarImagenes(){
+     document.slider.src=imagenes[i];
+
+      if(i<2)
+     {i++;
+     }else{
+     i=0;
+     }
+     }
+     this.setInterval(cambiarImagenes, 2000);
+
+
+    });
+
+</script>
+
+ <section class="extra" id="nosotros">
+    <div class="desenfoque">
+      <h2>CLINICA MEDICA</h2>
+      <p>Somos un grupo profesional, técnico y administrativo capacitado para la atención y contención del paciente.</p>
+      <p>El staff médico integra un equipo multidicisplinario en Laboratorio, Radiologia y Vacunacion con permanente actualización científica y tecnologica con el fin de brindar calidad y diagnostico preciso a nuestros pacientes</p>
+      <h3 style="text-shadow: 1px 2px white; color: #265769">QUEREMOS QUE TE SIENTAS COMO EN CASA</h3>
+     <div class="compromisos">
+      <div class="radius">
+        <img   src="./img/respeto1.png">
+        <h5>RESPETO</h5>
+       </div>
+       <div class="radius">
+         <img src="./img/abou-us-2-6.png">
+         <h5>COMPROMISO</h5>
+       </div>
+       <div class="radius" >
+         <img src="./img/etica-1.png">
+         <h5>ETICA</h5>
+       </div>
+       <div class="radius">
+         <img src="./img/trabajoenequipo1.png">
+         <h5>TRABAJO EN EQUIPO</h5>
+       </div>
+     </div>
+       
+    </div>
+ 
+ </section>
+ 
+  <footer  id="contacto" class="footer">
+      <h1>LFC. Clinica Medica</h1>
+   
+      <a class="icocont" href="https://goo.gl/maps/XZsEBarqhCHfw5rq7"><i class="fi fi-rs-marker">
+
+      </i>Calle Lombardo Nº156
+      General Belgrano Bs.As</a>
+      
+      <h3 style="color:#F6F3F0 ;">¡Estamos las 24hs conectados para asesorarte !</h3>
+   
+      <div class="card">
+        <h3>Turnos y consultas por WhatsApp</h3>
+        <i id="wspp" class="fi fi-brands-whatsapp"></i>
+        <p>Acceda a solicitar su turno a traves de nuestro <strong>WhatsApp</strong></p>
+        <a  class="boton" href=" http://wa.me/542243414876"  target="_blank">+54 2243414876</a>
+      </div>
+    
+   
+     <iframe id="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51796.45486000087!2d-58.52865549519778!3d-35.76853638129583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9597f11ea29beac7%3A0xb19bea23651398c0!2sGral.%20Belgrano%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1663779051980!5m2!1ses-419!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"  ></iframe>
+     <a href="#inicio"><i  id="flecha" class="fi fi-sr-arrow-circle-up"></i></a>
+    
+    </footer>
+   
+    <script src="./js/index.js"></script>
+</body>
+</html>

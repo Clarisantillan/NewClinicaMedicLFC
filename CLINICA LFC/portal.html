@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal del paciente</title>
+    <link rel="stylesheet" href="./css/portal.css">
+    <link rel="icon" href="./img/favicon.ico">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+</head>
+<body class="grid-container">
+    <header class="header" id="inicio">
+      <img class="logo" src="./img/logo.png" alt="logo">
+   </header> 
+   <nav class="nav">
+    <a id="casa" href="#inicio"><i class="fi fi-sr-home"></i></a>
+    <a id="histo" href="#historiac">Mi historia Clinica</a>
+    <a id="tur"href="#turnos">Solicitar turno</a>
+    <a id="salir" href="./index.html"> <i class="fi fi-sr-arrow-circle-right"></i>  Salir </a>
+   </nav>
+   <section class="section" >
+     <div id="bienv" >
+       <h4 class="titulo"><strong>Bienvenidos a CLINICA MEDICA LFC</strong></h4>
+       <p ><i class="fi fi-ss-user"></i>Luciano Pueyo</p>
+     </div>
+   </section>
+
+    <section class="historia" id="historiac">
+      <h1>HISTORIA CLINICA</h1>  
+     <table>
+        <tr>
+            <th>Estudio/Recepcion</th>
+            <th>Servicio/Profesional</th>
+            <th>Practicas</th>
+            <th>Informante/Solicitante</th>
+        </tr>
+        <track>
+         <td>(#27) 7/10/2022</td>
+         <td>Radiologia</td>
+         <td>Radiologia de columna</td>
+         <td>Dr. Cortez</td>
+        </track>
+     </table>   
+     
+    </section>
+    <section class="solicitartur" id="turnos">
+      <h1>SOLICITAR TURNO</h1>
+      <div class="ramas">
+        <h2 id="radiologia">Radiologia</h2>
+        <h2 id="laboratorio">Laboratorio</h2>
+        <h2 id="vacunacion">Vacunacion</h2>
+      </div>
+      <div id="calenrad">
+        <iframe src="https://radiologialfc.youcanbook.me/?noframe=true&skipHeaderFooter=true" id="ycbmiframeradiologialfc" style="width:50%;height:400px;border:0px;background-color:transparent;" frameborder="0" allowtransparency="true"></iframe><script>window.addEventListener && window.addEventListener("message", function(event){if (event.origin === "https://radiologialfc.youcanbook.me"){document.getElementById("ycbmiframeradiologialfc").style.height = event.data + "px";}}, false);</script>
+      </div>
+      <div id="calenlab">
+        <iframe src="https://laboratoriolfc.youcanbook.me/?noframe=true&skipHeaderFooter=true" id="ycbmiframelaboratoriolfc" style="width:50%;height:200px;border:0px;background-color:transparent;" frameborder="0" allowtransparency="true"></iframe><script>window.addEventListener && window.addEventListener("message", function(event){if (event.origin === "https://laboratoriolfc.youcanbook.me"){document.getElementById("ycbmiframelaboratoriolfc").style.height = event.data + "px";}}, false);</script>
+      </div>
+
+      <div id="calenvac">
+        <iframe src="https://vacunacionlfc.youcanbook.me/?noframe=true&skipHeaderFooter=true" id="ycbmiframevacunacionlfc" style="width:50%;height:200px;border:0px;background-color:transparent;" frameborder="0" allowtransparency="true"></iframe><script>window.addEventListener && window.addEventListener("message", function(event){if (event.origin === "https://vacunacionlfc.youcanbook.me"){document.getElementById("ycbmiframevacunacionlfc").style.height = event.data + "px";}}, false);</script>
+      </div>
+
+      
+    </section >
+
+    <script src="./js/portal.js"></script>
+</body>
+</html>

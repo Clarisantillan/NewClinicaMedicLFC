@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login y Registro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" href="./img/favicon.ico">
+    <link rel="stylesheet" href="./css/login.css">
+    <Set-Cookie: flavor=choco; SameSite=None; Secure>
+</head>
+<body>
+   <main>
+    <div class="contenedor__todo">
+        <div class="caja__trasera">
+            <div class="caja__trasera-login">
+                <h3>¿Ya tienes una cuenta?</h3>
+                <p>Inicie sesion para acceder a su informacion de turnos y estudios</p>
+                <button id="btn__iniciar-sesion">INICIAR SESION</button>
+            </div>
+        
+          <div class="caja__trasera-register">
+                <h3>¿Aun no tienes una cuenta?</h3>
+                <p>Registrate para poder iniciar sesion</p>
+                <button id="btn__registrarse">REGISTRARSE</button>
+              
+            </div>    
+        </div>
+        <div class="contenedor__login-register">
+            <form action="" id="forms" class="formulario__login">
+                <h2>Iniciar Sesion</h2>
+                <input type="text" id="dni" placeholder="Numero de Documento">
+                <input type="password" id="passw" placeholder="Contraseña">
+                <button id="boton">Acceder</button>
+                <p class="warning" id="warnings"></p>
+            </form>
+            <form action=""  id="form"class="formulario__register">
+                <h2>Registrarse</h2>
+                <input type="text" placeholder="Nombre Completo">
+                <input type="text" placeholder="Numero de Documento">
+                <input type="text" placeholder="Fecha de Nacimiento" onclick="ocultarError();" onfocus="(this.type='date')" onblur="(this.type='text')">
+                <input list="genero" placeholder="Genero">
+                <datalist id="genero">
+                    <option value="Femenino"></option>
+                    <option value="Masculino"></option>
+                    <option value="No binario"></option>
+                 </datalist>
+                <input type="email" id="email" placeholder="Correo Electronico">
+                <input type="password" id="password"placeholder="Contraseña">
+                <button>Registrarme</button>
+                <p class="warning" id="warning"></p>
+            </form>
+        </div>
+    </div>
+   </main>
+   <script src="./js/login.js"></script> 
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LFC-Laboratorio</title>
+    <link rel="icon" href="./img/favicon.ico">
+    <link rel="stylesheet" href="./css/lab.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-straight/css/uicons-bold-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css'>
+</head>
+<body  class="container">
+    <header id="inicio" class="header">
+        <img class="logo" src="./img/logo.png" alt="logo">
+        <div class="contenedor-portal">
+         Portal del paciente
+         <a class="portal" href="./login.registro.html">
+           <i class="fi fi-rs-calendar"></i>
+           Turnos
+         </a>
+          <a class="portal" href="./login.registro.html">
+            <i class="fi fi-rs-computer"></i>
+           Resultados
+           </a>
+        </div>
+    </header>
+
+    <nav class="nav">
+        <h1>NUESTRO LABORATORIO</h1>
+       <div>
+          <a class="nava" id="sint" onclick="SINTURNO()" href="#sinturno">Sin Turno</a>
+         <a class="nava" id="oren" onclick="ENVIESUORDEN()"href="#enviesuorden">Envíe su orden</a>
+         <a class="nava" id="prep" onclick="PREPARACION()"href="#preparacion">Preparación</a> 
+         <a id="volver" href="./index.html"> <i class="fi fi-sr-arrow-circle-right"></i></a>
+       </div>         
+    </nav>
+
+    <section  class="carusel">
+        <div id="Preparacion">
+          <ul>
+            <li>• Podés tomar agua.</li>
+            <li>  • Si tomás medicación, consultá a tu médico.</li>
+            <li > • <strong>AYUNO:</strong> Los análisis, en general, requieren de 10 (diez) a 12 (doce) horas de ayuno.</li>
+            <li>• 8 hs de ayuno: Estudios en general incluida orina completa.</li>
+            <li>•12 horas de ayuno: Colesterol Total/HDL/LDL. Hepatograma. Triglicéridos. Lípidos totales. Lipidograma.</li>
+            <li> • Recordá traer DNI, orden médica (excepto para COVID-19) y credencial (en caso de contar con cobertura).</li>
+           </ul>
+        </div>    
+        <div id="Sinturno">
+          <h2><strong>Acérquese a nuestro centro sin turno previo</strong></h2>
+          <p>Recordá traer DNI, orden médica (excepto para COVID-19) y credencial (en caso de contar con cobertura).</p>
+          <h5>HORARIOS DE ATENCIÓN</h5>
+          <h5>Lunes a Viernes de 7.30 a 13
+          Sábados de 8 a 12</h5>
+        </div> 
+   
+        <div id="Orden">
+           <form method="get">  
+           <h3 >Ingrese sus datos y adjunte la orden medica</h3>
+                          
+           <input type="text" placeholder="Nombre">
+                       
+           <input type="text" placeholder="Apellido">
+           
+           <input type="text" placeholder="Numero de Documento">   
+                  
+           <input type="email" placeholder="Email">
+           
+           <input type="file" placeholder="Adjuntar archivo"> 
+           
+           <input id="enviar"value="Enviar" type="submit">
+           </form>
+        </div>   
+   
+    </section>
+    <footer  id="contacto" class="footer">
+        <p class="laboratorio">Nuestro laboratorio cuenta con tecnología de última generación, para poder brindar a nuestros pacientes los resultados más certeros en menos de 48hs. Cumpliendo asi con los más altos estandares de calidad. </p> 
+        <a class="icocont" href="https://goo.gl/maps/XZsEBarqhCHfw5rq7"><i class="fi fi-rs-marker"> 
+         </i>Calle Lombardo Nº156
+         General Belgrano Bs.As
+        </a>
+       <h3 style="color:#F6F3F0 ;">¡Estamos las 24hs conectados para asesorarte !</h3>
+        <div class="card">
+          <h3>Turnos y consultas por WhatsApp</h3>
+          <i id="wspp" class="fi fi-brands-whatsapp"></i>
+          <p>Acceda a solicitar su turno a traves de nuestro <strong>WhatsApp</strong></p>
+          <a  class="boton" href=" http://wa.me/542243414876"  target="_blank">+54 2243414876 ></a>
+        </div>
+           
+       <iframe id="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51796.45486000087!2d-58.52865549519778!3d-35.76853638129583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9597f11ea29beac7%3A0xb19bea23651398c0!2sGral.%20Belgrano%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1663779051980!5m2!1ses-419!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"  ></iframe>
+       
+            
+    </footer>
+ <script src="./js/index.js"></script> 
+</body>
+</html>

@@ -1,0 +1,172 @@
+body{
+    font-family: sans-serif; /*tipo de letra*/
+    margin: 0; /*quita el margen*/
+}
+
+
+h6{
+    background-color: #265769;
+    padding: 20px;
+    margin: 0px;
+}
+
+.nav_link{ /*Seleccionamos la class nav_link, botones inicio, extraccion, radiologia*/
+    background-color: #F6F3F0;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    color: #265769;
+}
+
+.nav_link:hover{ /*cuando posicionamos el raton en la class nav_link*/
+    background-color: #5FA49E;
+    color: white;
+}
+
+header{
+    display: flex; /*ubica las "cajas" horizontalmente*/
+    height: 75px;
+    background-color:#265769;
+    justify-content: space-between; /*Deja espacios entre ellos*/
+    align-items: center;/*alinear elementos verticalmente*/
+    padding: 10px;
+    margin: 0px;
+    color: #F6F3F0;
+}
+
+nav a{
+    text-decoration: none;
+    color:#F6F3F0;
+    font-weight: 600; /*negrita*/
+    padding-right: 25px; /*para separarlos un poco*/
+}
+
+.logo{
+    display: flex;
+    align-items: center; /*centrar el logo y el nombre de la clinica*/
+}
+
+.logo img{
+    height: 70px;
+    margin-right: 10px; /*separo la imagen del nombre*/
+}
+
+nav a:hover{
+    color: #0c2b36;
+} 
+.fetch{
+    background-color: #5FA49E;
+    color: #0c2b36;
+}
+.fetch > ul{
+    display: block;
+}
+
+/*Cuerpo de la pagina*/
+.parrafo{
+    z-index: 1;
+    margin: 0px;
+    padding: 3px 10px 5px 5px; /*padding para dejar bordes libres*/
+    font-size: 20px; /*tamaño de letra*/
+    line-height: 1.5; /*espacio entre lineas*/
+    background-color:#F6F3F0;/*color de fondo*/
+    text-align: justify; 
+}
+
+.parrafo img{
+    width: 500px;
+    height: 200px;
+    float:left;
+    margin-right: 15px;
+}
+
+nav ul{ /*le doy color y height al listado*/
+    margin: 0px;
+    height: 100px;
+    background-color:#265769;
+    color: #F6F3F0;
+}
+
+h3{ /*Centro los h3*/
+    text-align: center;
+    color:#265769;
+}
+
+.imagenporque img{
+    width: 600;
+    height: 300px;
+    float:left;
+    margin-right: 15px;
+    padding: 10px;
+}
+
+.vacunas img{
+    width: 700px;
+    height: 400px;
+    float:left;
+    margin-right: 15px;
+    padding: 10px;
+}
+
+.recibir img{
+    width: 500px;
+    height: 300px;
+    float:left;
+    margin-right: 15px;
+    padding: 10px;
+}
+
+.turno img{
+    width: 500px;
+    height: 300px;
+    float:left;
+    margin-right: 15px;
+    padding: 10px;
+}
+
+@media screen and (max-width:800px){
+    header{
+        display: block;
+        height: 150px;
+    }
+
+    .parrafo{
+        z-index: 1;
+        padding: 10px 10px; /*padding para dejar bordes libres*/
+        font-size: 15px; /*tamaño de letra*/
+        line-height: 1.5; /*espacio entre lineas*/
+        background-color:#F6F3F0;/*color de fondo*/
+        text-align: justify; 
+    }
+
+    .logo img{
+        height: 50px;
+        margin: 30px;
+    }
+    .parrafo img{
+        width: 350px;
+        height: 150px;
+    }
+
+    
+    .imagenporque img{
+        width: 350px;
+        height: 150px;
+    }
+
+    .vacunas img{
+        width: 350px;
+        height: 250px;
+    }
+
+    .recibir img{
+        width: 350px;
+        height: 250px;
+    }
+
+    .turno img{
+        width: 350px;
+        height: 250px;
+    }
+}
+

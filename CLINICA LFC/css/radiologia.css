@@ -1,0 +1,151 @@
+body{
+    font-family: sans-serif; /*tipo de letra*/
+    margin: 0; /*quita el margen*/
+}
+
+h6{
+    background-color: #265769;
+    padding: 20px;
+    margin: 0px;
+
+}
+
+.nav_link{ /*Seleccionamos la class nav_link, botones inicio, extraccion, vacunacion*/
+    background-color: #F6F3F0;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.nav_link:hover{ /*cuando posicionamos el raton en la class nav_link*/
+    background-color: #5FA49E;
+    color: white;
+}
+
+header{
+    display: flex; /*ubica las "cajas" horizontalmente*/
+    height: 75px;
+    background-color:#265769;
+    justify-content: space-between; /*Deja espacios entre ellos*/
+    align-items: center;/*alinear elementos verticalmente*/
+    padding: 10px;
+    margin: 0px;
+    color: #F6F3F0;
+}
+.links > a{
+   color: #265769;
+}
+nav a{
+    text-decoration: none;
+    color:#F6F3F0;
+    font-weight: 600; /*negrita*/
+    padding-right: 25px; /*para separarlos un poco*/
+}
+
+.logo{
+    display: flex;
+    align-items: center; /*centrar el logo y el nombre de la clinica*/
+}
+
+.logo img{
+    height: 70px;
+    margin-right: 10px; /*separo la imagen del nombre*/
+}
+
+nav a:hover{
+    color: #0c2b36;
+} 
+
+/*Cuerpo de la pagina*/
+.parrafo{
+    z-index: 1;
+    margin: 0px;
+    padding: 3px 10px 5px 5px; /*padding para dejar bordes libres*/
+    font-size: 20px; /*tamaño de letra*/
+    line-height: 1.5; /*espacio entre lineas*/
+    background-color:#F6F3F0;
+    text-align: justify; 
+}
+
+.parrafo img{
+    height: 200px;
+    width: 350px;
+    float:left;
+    margin-right: 15px;
+}
+
+nav ul{ /*le doy color y height al listado*/
+    margin: 0px;
+    padding: 10px;
+    height: 60px;
+    background-color:#265769;
+}
+
+h3{ /*Centro los h3*/
+    font-size: 21px;
+    text-align: center;
+    color:#265769;
+
+
+}
+
+.imagenporque img{
+    width: 100%;
+    height: 450px;
+    float:left;
+    margin-right: 15px;
+}
+
+.turno img{
+    width: 100%;
+    height: 450px;
+    float:left;
+    margin-right: 15px;
+}
+
+
+@media screen and (max-width:800px){
+    header{
+        display: block;
+        height: 150px;
+    }
+
+    .parrafo{
+        z-index: 1;
+        padding: 10px 10px;
+        font-size: 15px; /*tamaño de letra*/
+        line-height: 1.5; /*espacio entre lineas*/
+        background-color:#F6F3F0;
+        text-align: justify; 
+    }
+
+    .logo img{
+        height: 50px;
+        margin: 30px;
+    }
+    .parrafo img{
+        width: 350px;
+        height: 150px;
+    }
+
+    
+    .imagenporque img{
+        width: 350px;
+        height: 150px;
+    }
+
+    .vacunas img{
+        width: 350px;
+        height: 250px;
+    }
+
+    .recibir img{
+        width: 350px;
+        height: 250px;
+    }
+
+    .turno img{
+        width: 350px;
+        height: 250px;
+    }
+}

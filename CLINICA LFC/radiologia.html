@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/favicon.ico"> 
+    <link rel="stylesheet" href="./css/radiologia.css">
+    <title>Clinica - Radiologia</title> 
+    <Set-Cookie: flavor=choco; SameSite=None; Secure>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./img/logo.png" alt="logo de la Clinica"> <!--Utilizo una imgaen-->
+            <h2 class="nombreClinica">Clinica LFC - Radiologia</h2>
+        </div> 
+
+        <nav class="links">
+            <a href="./index.html" class="nav_link">Inicio</a>
+            
+            <a href="./laboratorio.html" class="nav_link">Laboratorio</a>
+            
+            <a href="./vacunacion.html" class="nav_link">Vacunación</a>
+        </nav>
+
+    </header>
+
+    <main>
+        <div class="parrafo">
+            <img src="./img/main.jpg">
+            <p><b>Radiologia LFC, ¿que es?..</b>
+                Somos una Clinica Privada especializada en 3 ramas de la salud, en este caso vamos a profundizar
+                en nuestro centro radiologico, ubicado en CABA, Buenos Aires, Argentina, donde podras pedir imagenes 
+                con exelentes profesionales comprometidos a brindar cada dia una exelente atención.
+                Para esto se debera reservar un turno por esta misma pagina web con anterioridad. Para conocer 
+                mejor nuestra propuesta lo invitamos a que continue leyendo, ya que aqui encontrara la 
+                información especifica y necesaria sobre el servicio que brindamos, las vacunas que ofrecemos y 
+                como podra reservar su turno. A continuacion tendra una lista donde podra "clikear" e ir 
+                directamente a la sección de su interes si lo requiere.
+            </p>
+        </div>
+
+        <nav class="lista">
+            <ul>
+                <li><a href="#porque">¿Que es la radiologia?</a></li>
+                <li><a href="#turno">¿Como pedir turno?<a</li>
+                <li><a href="#ubicacion">¿Donde se ubica el centro Radiologico?</a></li>
+            </ul>
+        </nav>
+
+        <section id="porque">
+
+            <h3><strong>¿Que es la radiologia?</strong></h3>
+
+            <div class="imagenporque"><img name="slider2"></div>
+
+            <div class="parrafo">
+            <p>La radiología es la especialidad médica, que se ocupa de generar imágenes del interior del cuerpo 
+            mediante diferentes agentes físicos (rayos X, ultrasonidos, campos magnéticos, entre otros) y de 
+            utilizar estas imágenes para el diagnóstico y, en menor medida, para el pronóstico y el tratamiento 
+            de las enfermedades. También se le denomina genéricamente radiodiagnóstico o diagnóstico por imagen. 
+            La radiología debe distinguirse de la radioterapia, que no utiliza imágenes, sino que emplea 
+            directamente la radiación ionizante (rayos X de mayor energía que los usados para el diagnóstico, y 
+            también radiaciones de otro tipo) para el tratamiento de las enfermedades (por ejemplo, para detener 
+            o frenar el crecimiento de los tumores que son sensibles a la radiación).
+            </p></div>
+
+        </section>
+
+        <section id="turno">
+
+            <h3><b>¿Como pedir turno?</b></h3>
+
+            <div class="turno"><img src="./img/radiologia2.jpg"></div>
+            <script>
+                window.addEventListener('load', function()
+             {
+                var imagen=[];
+
+                imagen[0]='./img/PLACA.jpg';
+                imagen[1]='./img/descarga1.jpg';
+               imagen[2]='./img/placas3.jpg';
+
+             document.slider2.src=imagen[0];
+    
+              var i=0;
+              var j=0;
+
+             function cambiarImagen(){
+               document.slider2.src=imagen[i];
+
+                if(i<2)
+                {
+                   i++;
+                    }else{
+                           i=0;
+                    }
+            }
+          this.setInterval(cambiarImagen,3000);
+
+
+});
+            </script>
+
+            <div class="parrafo">
+            <p>
+                Para conseguir su turno debera: iniciar sesión en nuestra pagina web (en caso de no tener cuenta
+                debera crear una), luego de realizar el paso anterior debera ir a (link de turnos para vacunación)
+                donde se le preguntara que necesita especificamente y muchos detalles mas, segun lo que indique 
+                se le mostrara, los medicos, enfermeros y auxiliares que atienden en esa area, finalmente se 
+                le presentaran los dias disponibles con sus respectivos horarios para que usted reserve el que 
+                prefiera. Realizado todo lo mencionado, ya deberia tener su turno. Recuerde llevar la documentación 
+                requerida, esto ultimo se le informara segun el tramite que usted quiera realizar.
+            </p></div>
+            
+        </section>
+
+        <section id="ubicacion">
+            <h3><b>¿Donde se ubica el centro Radiologico?</b></h3>
+            <iframe id="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51796.45486000087!2d-58.52865549519778!3d-35.76853638129583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9597f11ea29beac7%3A0xb19bea23651398c0!2sGral.%20Belgrano%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1663779051980!5m2!1ses-419!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"  ></iframe>
+        </section>
+
+    </main>
+          
+    </footer>
+        <h6>Clínica LFC &#169 2022 | Todos los derechos reservados</h6>
+    </footer>
+    
+  
+</body>
+</html>
